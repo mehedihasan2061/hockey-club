@@ -1,38 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hockey Club</title>
     <!-- tailwind & daisyUi  -->
-    
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
- <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
-        }
-      }
-    }
-  </script>
 
-  <!-- font awesome link  -->
-  <script src="https://kit.fontawesome.com/d95bf04b20.js" crossorigin="anonymous"></script>
-  <!-- google font  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-<style>
-    .lato{
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- font awesome link  -->
+    <script
+      src="https://kit.fontawesome.com/d95bf04b20.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .lato {
         font-family: "Lato", sans-serif;
-    }
-</style>
-</head>
-<body>
+      }
+    </style>
+  </head>
+  <body class="lato">
+    <header class="container mx-auto">
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-3xl font-bold"
+              >Hockey<span class="text-orange-600">'</span>s</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-lg font-semibold">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
 
-</body>
+          <div class="navbar-end">
+            <div class="">
+              <i
+                class="fa-solid fa-magnifying-glass lg:mr-8 cursor-pointer"
+              ></i>
+            </div>
+            <a class="btn">Get Ticket</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- slider banner section  -->
+      <section class="container mx-auto">
+        <div>
+          <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="./Images/1.png" class="w-full" />
+
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide4" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+
+            <div id="slide2" class="carousel-item relative w-full">
+              <img
+                src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
+                class="w-full"
+              />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+              <img
+                src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
+                class="w-full"
+              />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+              <img
+                src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
+                class="w-full"
+              />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="bg-black  p-3 w-80">
+            <h1 class="text-white text-xl font-semibold">Meet all the heroes from the field</h1>
+            <p class="text-white">
+              We will start with a small introduction to games and sports.
+              Sporting activities require a lot of physical activity.
+            </p>
+          </div> -->
+        </div>
+      </section>
+    </header>
+
+    <!-- proges var section  -->
+    <main>
+      <section class="container mx-auto my-20">
+        <div>
+          <h1 class="text-3xl font-bold text-center mb-6">
+            Professional Hockeys Club
+          </h1>
+          <p class="w-2/4 mx-auto">
+            The object is to drive a puck (a small, hard rubber disk) into the
+            opponents' goal with a hockey stick, thus scoring one point. A game
+            consists of three 20-minute periods.
+          </p>
+        </div>
+
+        <!-- progress card section  -->
+        <div class="grid grid-cols-1 mx-auto lg:grid-cols-4">
+          <div class="card w-72 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <div
+                class="radial-progress text-primary"
+                style="--value: 70"
+                role="progressbar"
+              >
+                70%
+              </div>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Prayer Facility</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+            </div>
+          </div>
+          <div class="card w-72 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <div
+                class="radial-progress text-green-700"
+                style="--value: 80"
+                role="progressbar"
+              >
+                80%
+              </div>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Experienced Coach</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+            </div>
+          </div>
+          <div class="card w-72 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <div
+                class="radial-progress text-purple-700"
+                style="--value: 67"
+                role="progressbar"
+              >
+                67%
+              </div>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Senior Player</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+            </div>
+          </div>
+          <div class="card w-72 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <div
+                class="radial-progress text-primary"
+                style="--value: 87"
+                role="progressbar"
+              >
+                87%
+              </div>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Training Ground</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
