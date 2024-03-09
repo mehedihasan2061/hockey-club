@@ -95,16 +95,16 @@
                 class="fa-solid fa-magnifying-glass lg:mr-8 cursor-pointer"
               ></i>
             </div>
-            <a class="btn">Get Ticket</a>
+            <a class="btn bg-orange-700 text-white font-semibold">Get Ticket</a>
           </div>
         </div>
       </nav>
 
       <!-- slider banner section  -->
       <section class="container mx-auto">
-        <div>
+        <div class="relative">
           <div class="carousel w-full">
-            <div id="slide1" class="carousel-item relative w-full">
+            <div id="slide1" class="carousel-item relative w-full ">
               <img src="./Images/1.png" class="w-full" />
 
               <div
@@ -115,9 +115,9 @@
               </div>
             </div>
 
-            <div id="slide2" class="carousel-item relative w-full">
+            <div id="slide2" class="carousel-item relative w-full ">
               <img
-                src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
+                src="./Images/2.png"
                 class="w-full"
               />
               <div
@@ -127,39 +127,34 @@
                 <a href="#slide3" class="btn btn-circle">❯</a>
               </div>
             </div>
-            <div id="slide3" class="carousel-item relative w-full">
+            <div id="slide3" class="carousel-item relative w-full ">
               <img
-                src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
+                src="./Images/3.png"
                 class="w-full"
               />
               <div
                 class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
               >
                 <a href="#slide2" class="btn btn-circle">❮</a>
-                <a href="#slide4" class="btn btn-circle">❯</a>
-              </div>
-            </div>
-            <div id="slide4" class="carousel-item relative w-full">
-              <img
-                src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
-                class="w-full"
-              />
-              <div
-                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-              >
-                <a href="#slide3" class="btn btn-circle">❮</a>
                 <a href="#slide1" class="btn btn-circle">❯</a>
               </div>
             </div>
+           
           </div>
 
-          <!-- <div class="bg-black  p-3 w-80">
-            <h1 class="text-white text-xl font-semibold">Meet all the heroes from the field</h1>
-            <p class="text-white">
-              We will start with a small introduction to games and sports.
-              Sporting activities require a lot of physical activity.
-            </p>
-          </div> -->
+          <div>
+            <div
+              class="bg-black p-10 flex flex-col lg:absolute right-8 bottom-16 rounded-lg"
+            >
+              <h1 class="text-white text-2xl mb-4 font-semibold">
+                Meet all the heroes from the field
+              </h1>
+              <p class="text-white">
+                We will start with a small introduction to games and sports.
+                Sporting activities require a lot of physical activity.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </header>
@@ -259,68 +254,59 @@
       </section>
 
       <!-- program section  -->
-      <section class="container mx-auto">
-        <div class="grid grid-cols-4 gap-2">
-          <div class="bg-slate-600 col-span-2 row-span-2">
-            <div
-              class="card w-96 bg-base-10 shadow-xl image-full col-span-2 row-span-2"
-            >
-              <figure>
-                <img
-                  src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                  alt="Shoes"
-                />
-              </figure>
-              <div class="card-body">
-                <h2 class="card-title">Shoes!</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div class="card-actions justify-end">
-                  <button class="btn btn-primary">Buy Now</button>
-                </div>
+      <section class="container mx-auto my-20">
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+          <div class="hero h-72" style="background-image: url(./Images/2.png)">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="">
+                <h1 class="mb-5 text-5xl font-bold">Junior Program</h1>
+                <p class="mb-5">
+                  Games and sports are very similar: a game is a physical or
+                  mental activity or contest that has rules and that people do
+                  for pleasure
+                </p>
+                <button class="btn  bg-orange-700 text-white font-semibold border-0">Register Now</button>
               </div>
             </div>
           </div>
-          <div class="bg-red-200 col-span-2 row-span-2">
-            <div
-              class="card w-96 bg-base-10 shadow-xl image-full col-span-2 row-span-2"
-            >
-              <figure>
-                <img
-                  src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                  alt="Shoes"
-                />
-              </figure>
-              <div class="card-body">
-                <h2 class="card-title">Shoes!</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div class="card-actions justify-end">
-                  <button class="btn btn-primary">Buy Now</button>
-                </div>
+
+          <div class="hero h-72" style="background-image: url(./Images/3.png)">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="">
+                <h1 class="mb-5 text-5xl font-bold">Teenager Program</h1>
+                <p class="mb-5">
+                  Our hockey programs are tailored specifically to each division
+                  based on grade. Not only will each team focus on hockey
+                  fundamentals and technique.
+                </p>
+                <button class="btn  bg-orange-700 text-white font-semibold border-0">Register Now</button>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-span-4 row-span-4">
-          <div class="flex justify-center">
-            <div class="card w-96 bg-base-10 shadow-xl image-full col-span-2">
-              <figure>
-                <img
-                  class=""
-                  src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                  alt="Shoes"
-                />
-              </figure>
-              <div class="card-body">
-                <h2 class="card-title">Shoes!</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div class="card-actions justify-end">
-                  <button class="btn btn-primary">Buy Now</button>
-                </div>
+        <div class="col-span-1 my-10 lg:col-span-2">
+          <div class="hero h-80" style="background-image: url(./Images/4.png)">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="">
+                <h1 class="mb-5 text-5xl font-bold">Professional Program</h1>
+                <p class="mb-5">
+                  A sports program is something that focuses on overall sport
+                  development. Creating interest, training youngsters, and
+                  producing a constant supply of high performance athletes
+                  while, at the same time, providing participation opportunities
+                  for any who want to play.
+                </p>
+                <button class="btn  bg-orange-700 text-white font-semibold border-0">Register Now</button>
               </div>
             </div>
           </div>
         </div>
+        <!-- last  -->
+        <!-- </div> -->
       </section>
 
       <!-- product section  -->
@@ -478,8 +464,8 @@
       <section class="container mx-auto my-20">
         <h1 class="text-4xl font-bold text-center mb-5">Clients Question</h1>
         <p class="w-1/2 mx-auto mb-10">
-          Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
-          placerat dolor. Purus urna in sit nullam proin
+          a document or set of questions that a marketing agency uses to gather
+          information about new clients.
         </p>
         <div class="grid grid-cols-1 gap-5 p-20 lg:grid-cols-2 ml-10 mr-10">
           <div>
@@ -602,18 +588,6 @@
                   class="grow"
                   placeholder="Enter your full name"
                 />
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 16 16"
-                  fill="currentColor"
-                  class="w-4 h-4 opacity-70"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
               </label>
               <label class="input input-bordered flex items-center gap-2 my-5">
                 <svg
@@ -671,11 +645,12 @@
               </label>
 
               <textarea
-                class="bg-gray-100"
+                class="bg-gray-100 w-full"
                 name=""
                 id=""
                 cols="76"
                 rows="10"
+                placeholder="Write your message"
               ></textarea>
               <button class="btn bg-red-600 text-white w-full">
                 Send Message
@@ -744,6 +719,7 @@
         <h6 class="text-white footer-title">Services</h6>
         <a class="link link-hover text-white">Press kit</a>
       </nav>
+
       <nav>
         <h6 class="text-white footer-title">Services</h6>
         <h6 class="footer-title text-white">Legal</h6>
